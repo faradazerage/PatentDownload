@@ -5,7 +5,7 @@ import urllib2
 import os
 
 if not os.path.exists('patents'):
-    os.makedir('patents')
+    os.makedirs('patents')
 
 with open(sys.argv[1]) as fp:
     os.chdir('patents')
